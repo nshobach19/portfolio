@@ -3,7 +3,9 @@
 :root {
   --putih: #f8f7f9;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body,
 html,
 * {
@@ -15,6 +17,7 @@ html,
 body {
   background-color: #1f1f1f;
   font-family: "Poppins", sans-serif;
+  position: relative;
 }
 
 /* NAVBAR */
@@ -25,6 +28,12 @@ nav {
   display: flex;
   padding: 0 64px;
   height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: #1f1f1f;
 }
 
 nav .nav-logo .achmad {
@@ -54,7 +63,7 @@ nav .nav-item a:hover {
 
 /* HOME */
 .home {
-  height: calc(100vh - 60px);
+  height: 100vh;
   display: flex;
   align-items: center;
   padding: 0 64px;
