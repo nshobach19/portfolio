@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --putih: #f8f7f9;
+}
+
+body,
+html,
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: #1f1f1f;
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+nav {
+  color: var(--putih);
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 0 64px;
+  height: 60px;
+}
+
+nav .nav-logo .achmad {
+  font-size: 20px;
+  color: var(--putih);
+  text-decoration: none;
+}
+
+nav .nav-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav .nav-item a {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--putih);
+  text-decoration: none;
+}
+
+nav .nav-item a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* END NAVBAR */
+
+/* HOME */
+.home {
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  padding: 0 64px;
+  gap: 50px;
+}
+
+.home .kiri {
+  height: 400px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home .kiri h1 {
+  color: var(--putih);
+}
+
+.home .kiri .nama {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.home .kiri .pekerjaan {
+  font-size: 80px;
+  line-height: 80px;
+  margin-bottom: 25px;
+}
+
+.home .kiri p {
+  color: rgba(248, 247, 249, 0.5);
+  width: 80%;
+  margin-bottom: 35px;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.home .kiri a {
+  position: absolute;
+  font-size: 13px;
+  color: var(--hitam);
+  text-decoration: none;
+  border: 2px solid var(--hitam);
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 16px;
+  width: fit-content;
+  transition: transform 100ms, border 100ms;
+  background-color: rgb(213, 213, 0);
+  text-transform: uppercase;
+  margin-top: 350px;
+}
+
+.home .kiri a:hover {
+  transform: translateY(-5px);
+}
+
+.home .kanan {
+  height: 400px;
+  flex: 1;
+  position: relative;
+}
+
+.home .kanan .gambar-home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.home .kanan .blur {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 100%;
+  background: url("img/ayun.jpg"), lightgray 50% / cover no-repeat;
+  filter: blur(100px);
+}
+/* END HOME */
+
+/* ABOUT */
+.about {
+  /* border: 1px solid red; */
+  margin-top: 30px;
+  display: flex;
+  padding: 0 64px;
+}
+
+.about .kiri {
+  /* border: 1px solid white; */
+  flex: 1;
+  display: flex;
+  place-content: center;
+}
+
+.about .kiri img {
+  width: 400px;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.about .kanan {
+  flex: 1;
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+}
+
+.about .kanan p {
+  color: white;
+  text-align: justify;
+}
+/* END ABOUT */
+
+.contact {
+  margin-top: 50px;
+  padding: 0 64px;
+  /* border: 1px solid white; */
+}
+
+.contact h1 {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.contact .sosmed {
+  margin-top: 20px;
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.contact .sosmed .sosmed-item {
+  /* border: 1px solid blue; */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 300ms;
+  border: 1px solid transparent;
+}
+
+.contact .sosmed .sosmed-item:hover {
+  border: 1px solid white;
+  border-radius: 13px;
+}
+
+.contact .sosmed .sosmed-item img {
+  width: 70px;
+}
+
+.contact .sosmed .sosmed-item p {
+  color: white;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
