@@ -129,12 +129,10 @@ nav .nav-item a:hover {
 
 .home .kanan .gambar-home {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 450px;
-  height: 450px;
-  object-fit: cover;
+  transform: translate(-50%, -50%) scale(85%);
+  width: 500px;
   border-radius: 100%;
 }
 
